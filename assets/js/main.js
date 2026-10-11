@@ -3,8 +3,11 @@
 // ---------------------------------------------------------------------------------------------
 const CONFIG = {
 	repo: "https://github.com/totallean/roblox-portfolio",
+	// Paste a game link between the quotes to show its "Play on Roblox" button; empty = hidden.
 	play: {
 		spectrum: "https://www.roblox.com/games/90164767787037/Spectrum-Forge",
+		webswing: "",
+		horror: "",
 	},
 	contacts: [
 		// Discord has no public profile links by username, so clicking copies it instead.
