@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>totallean — Roblox Developer</title>
+	<meta name="description" content="Roblox gameplay programmer (Luau): a released incremental game, web swinging physics, stealth horror AI and a tycoon.">
+	<meta property="og:title" content="totallean — Roblox Developer">
+	<meta property="og:description" content="Gameplay systems in Luau: physics, NPC AI, economy, monetization and saves.">
+	<meta property="og:image" content="https://totallean.github.io/assets/img/spectrum-1_hero.jpg">
+	<link rel="icon" href="assets/img/spectrum-icon.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<header class="topbar">
+		<a class="brand" href="#top">totallean<span class="brand-dot">.</span></a>
+		<nav class="nav">
+			<a href="#projects" data-i18n="navProjects">Projects</a>
+			<a href="#skills" data-i18n="navSkills">Skills</a>
+			<a href="#contact" data-i18n="navContact">Contact</a>
+		</nav>
+		<div class="lang" role="group" aria-label="Language">
+			<button type="button" data-lang="en">EN</button>
+			<button type="button" data-lang="ru">RU</button>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<p class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">Roblox Studio · Luau · open for work</span></p>
+			<h1>
+				<span data-i18n="heroTitleA">Gameplay systems</span><br>
+				<span class="accent" data-i18n="heroTitleB">that feel good and hold up online.</span>
+			</h1>
+			<p class="lead" data-i18n="heroLead">
+				I'm a Roblox developer. I build mechanics end to end: physics, NPC AI, economy, saving and the UI around them, with server-authoritative code that stays readable.
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="#projects" data-i18n="heroCtaProjects">See projects</a>
+				<a class="btn" href="#contact" data-i18n="heroCtaContact">Hire me</a>
+			</div>
+			<ul class="stats">
+				<li><strong>1</strong><span data-i18n="statReleased">released game</span></li>
+				<li><strong>3</strong><span data-i18n="statDemos">gameplay demos</span></li>
+				<li><strong>EN / RU</strong><span data-i18n="statLocalized">localized UI</span></li>
+			</ul>
+		</section>
+
+		<section id="projects" class="section">
+			<h2 class="section-title" data-i18n="projectsTitle">Projects</h2>
+			<p class="section-lead" data-i18n="projectsLead">A released game, plus small demo places, each built around one mechanic that is hard to get right.</p>
+
+			<article class="project" data-project="spectrum">
+				<div class="media">
+					<img class="media-main" src="assets/img/spectrum-1_hero.jpg" alt="Spectrum Forge key art" loading="lazy">
+					<div class="thumbs">
+						<button type="button" class="thumb is-active" data-src="assets/img/spectrum-1_hero.jpg"><img src="assets/img/spectrum-1_hero.jpg" alt="" loading="lazy"></button>
+						<button type="button" class="thumb" data-src="assets/img/spectrum-2_wheel_x10.jpg"><img src="assets/img/spectrum-2_wheel_x10.jpg" alt="" loading="lazy"></button>
+						<button type="button" class="thumb" data-src="assets/img/spectrum-3_construct.jpg"><img src="assets/img/spectrum-3_construct.jpg" alt="" loading="lazy"></button>
+						<button type="button" class="thumb" data-src="assets/img/spectrum-4_hub.jpg"><img src="assets/img/spectrum-4_hub.jpg" alt="" loading="lazy"></button>
+					</div>
+				</div>
+				<div class="body">
+					<p class="kicker"><span data-i18n="sfKicker">Incremental · Monetization · Live game</span> <span class="badge badge-live" data-i18n="released">released</span></p>
+					<h3>Spectrum Forge</h3>
+					<p data-i18n="sfSummary">An incremental game on Roblox: forge glowing constructs from nine colors, power up your Ring and send your Ghost to fight while you are away.</p>
+					<ul class="points">
+						<li data-i18n="sfP1">Nine server services behind a single bootstrap, with a typed network contract and one economy config for all balance math.</li>
+						<li data-i18n="sfP2">Profile saving with a write queue, session locking and BindToClose; offline income computed on join.</li>
+						<li data-i18n="sfP3">Spectrum Wheel crates with odds shown in game, a construct builder with color sets, and arena battles against Ghosts.</li>
+						<li data-i18n="sfP4">Five game passes and four developer products, a step-by-step tutorial and RU/EN localization chosen from the player's locale.</li>
+					</ul>
+					<div class="links">
+						<a class="btn btn-small btn-primary" data-play="spectrum" href="#" target="_blank" rel="noopener" data-i18n="playRoblox">Play on Roblox</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="project" data-project="webswing">
+				<div class="media">
+					<img class="media-main" src="assets/img/webswing-arena.jpg" alt="Web Swing greybox arena" loading="lazy">
+				</div>
+				<div class="body">
+					<p class="kicker" data-i18n="wsKicker">Physics · Camera · Networking</p>
+					<h3>Web Swing</h3>
+					<p data-i18n="wsSummary">Spider-Man style web swinging: hold to swing, zip to a point, reel in, jump off with momentum.</p>
+					<ul class="points">
+						<li data-i18n="wsP1">Pendulum physics on top of Roblox physics: the rope constraint corrects velocity every step instead of teleporting the character.</li>
+						<li data-i18n="wsP2">Anchor selection like the console games: an ideal point ahead and above is projected onto the nearest facade, so arcs run along the street.</li>
+						<li data-i18n="wsP3">Game feel: body aligned to the rope, arm IK toward the web, speed-based FOV, camera shake, wind streaks.</li>
+						<li data-i18n="wsP4">Webs replicate to everyone with server validation; a server-timed ring race feeds a global leaderboard.</li>
+					</ul>
+					<div class="links">
+						<a class="btn btn-small" data-repo-path="WebSwing" href="#" target="_blank" rel="noopener" data-i18n="code">Code</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="project" data-project="horror">
+				<div class="media">
+					<img class="media-main" src="assets/img/horror-menu.jpg" alt="The Stalker main menu" loading="lazy">
+					<div class="thumbs">
+						<button type="button" class="thumb is-active" data-src="assets/img/horror-menu.jpg"><img src="assets/img/horror-menu.jpg" alt="" loading="lazy"></button>
+						<button type="button" class="thumb" data-src="assets/img/horror-vision.jpg"><img src="assets/img/horror-vision.jpg" alt="" loading="lazy"></button>
+						<button type="button" class="thumb" data-src="assets/img/horror-gameover.jpg"><img src="assets/img/horror-gameover.jpg" alt="" loading="lazy"></button>
+						<button type="button" class="thumb" data-src="assets/img/horror-maze.jpg"><img src="assets/img/horror-maze.jpg" alt="" loading="lazy"></button>
+					</div>
+				</div>
+				<div class="body">
+					<p class="kicker" data-i18n="hsKicker">NPC AI · Pathfinding · UX</p>
+					<h3>The Stalker</h3>
+					<p data-i18n="hsSummary">A stealth horror NPC that sees, hears and hunts you through a dark maze. Find the keys, hide in lockers, escape.</p>
+					<ul class="points">
+						<li data-i18n="hsP1">Perception: view cone, line of sight, lighting, flashlight and crouching; awareness builds up gradually instead of instant detection.</li>
+						<li data-i18n="hsP2">Hearing from the speed the server measures, not from what the client claims.</li>
+						<li data-i18n="hsP3">Six-state AI (patrol, investigate, search, chase, extract, attack) on PathfindingService with async paths and stuck recovery. If it sees you hide, it pulls you out.</li>
+						<li data-i18n="hsP4">Main menu with a live 3D cover shot, a game-over screen, server-driven respawns and Studio-only dev tools for automated QA.</li>
+					</ul>
+					<div class="links">
+						<a class="btn btn-small" data-repo-path="HorrorStalker" href="#" target="_blank" rel="noopener" data-i18n="code">Code</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="project" data-project="butter">
+				<div class="media" id="butter-media">
+					<div class="placeholder-art" aria-hidden="true">
+						<span>🧈</span><span>1.25K</span><span>×2</span>
+					</div>
+				</div>
+				<div class="body">
+					<p class="kicker" data-i18n="bsKicker">Tycoon · Economy · Monetization</p>
+					<h3>Butter Squish Tycoon</h3>
+					<p data-i18n="bsSummary">A factory tycoon: butter sticks leave the extruder, get stamped and coated in up to five layers of wax, then sell at the collector.</p>
+					<ul class="points">
+						<li data-i18n="bsP1">Content-driven design: every station, button and price comes from one config, so a new production step is a single table entry.</li>
+						<li data-i18n="bsP2">Six plots with claim pads, purchase buttons that pop in with tweens, belt boosts and rebirths.</li>
+						<li data-i18n="bsP3">Achievements with rewards and a collection bonus, a first-time-user tutorial, and a shop with game passes and developer products.</li>
+						<li data-i18n="bsP4">DataStore saving with session locking, autosave and BindToClose that waits for pending writes.</li>
+					</ul>
+					<div class="links">
+						<a class="btn btn-small" data-repo-path="ButterSquishTycoon" href="#" target="_blank" rel="noopener" data-i18n="code">Code</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<section id="skills" class="section">
+			<h2 class="section-title" data-i18n="skillsTitle">Skills</h2>
+			<div class="skills">
+				<div class="skill">
+					<h4 data-i18n="sk1Title">Luau &amp; architecture</h4>
+					<p data-i18n="sk1Text">Modules split into shared / server / client, typed APIs, Rojo-friendly layout, Git.</p>
+				</div>
+				<div class="skill">
+					<h4 data-i18n="sk2Title">Networking &amp; security</h4>
+					<p data-i18n="sk2Text">Server authority, remote validation, rate limiting, network ownership.</p>
+				</div>
+				<div class="skill">
+					<h4 data-i18n="sk3Title">NPC AI</h4>
+					<p data-i18n="sk3Text">State machines, perception, PathfindingService, debug visualisation.</p>
+				</div>
+				<div class="skill">
+					<h4 data-i18n="sk4Title">Physics &amp; feel</h4>
+					<p data-i18n="sk4Text">Character controllers, constraints, camera work, tweening, VFX.</p>
+				</div>
+				<div class="skill">
+					<h4 data-i18n="sk5Title">Data, economy &amp; monetization</h4>
+					<p data-i18n="sk5Text">DataStores with session locking, balance simulations, game passes and developer products.</p>
+				</div>
+				<div class="skill">
+					<h4 data-i18n="sk6Title">UI / UX</h4>
+					<p data-i18n="sk6Text">Menus, HUDs, onboarding, localisation, mobile-friendly input.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section contact">
+			<h2 class="section-title" data-i18n="contactTitle">Work with me</h2>
+			<div class="terms">
+				<div class="term">
+					<h4 data-i18n="termShareTitle">Revenue share</h4>
+					<p data-i18n="termShareText">I build features for a percentage of the game's payouts.</p>
+				</div>
+				<div class="term">
+					<h4 data-i18n="termFixedTitle">Small fixed price</h4>
+					<p data-i18n="termFixedText">Smaller tasks for $5–15 each.</p>
+				</div>
+				<div class="term">
+					<h4 data-i18n="termPayTitle">Payment</h4>
+					<p data-i18n="termPayText">Crypto wallets. No PayPal.</p>
+				</div>
+			</div>
+			<p class="section-lead" data-i18n="contactLead">The quickest way to reach me:</p>
+			<ul class="contacts" id="contacts"></ul>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<span>© <span id="year"></span> totallean</span>
+		<span data-i18n="footerNote">Built with plain HTML &amp; CSS, hosted on GitHub Pages.</span>
+	</footer>
+
+	<div class="lightbox" id="lightbox" hidden>
+		<img alt="">
+	</div>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
