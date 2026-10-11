@@ -60,9 +60,9 @@ const STRINGS = {
 		bsSummary:
 			"A factory tycoon: butter sticks leave the extruder, get stamped and coated in up to five layers of wax, then sell at the collector.",
 		bsP1: "Content-driven design: every station, button and price comes from one config, so a new production step is a single table entry.",
-		bsP2: "Six plots with claim pads, purchase buttons that pop in with tweens, belt boosts and rebirths.",
+		bsP2: "Six plots with claim pads, purchase buttons that pop in with tweens, belt boosts, rebirths, server-wide announcements and a leaderboard.",
 		bsP3: "Achievements with rewards and a collection bonus, a first-time-user tutorial, and a shop with game passes and developer products.",
-		bsP4: "DataStore saving with session locking, autosave and BindToClose that waits for pending writes.",
+		bsP4: "Every remote is checked against a declared argument schema with per-remote rate limits; saves use session locking, autosave and BindToClose.",
 		skillsTitle: "Skills",
 		sk1Title: "Luau & architecture",
 		sk1Text: "Modules split into shared / server / client, typed APIs, Rojo-friendly layout, Git.",
@@ -129,9 +129,9 @@ const STRINGS = {
 		bsSummary:
 			"Тайкун-фабрика: бруски масла выходят из экструдера, проходят пресс-штамп и до пяти слоёв воска и продаются на коллекторе.",
 		bsP1: "Дизайн от данных: все станции, кнопки и цены лежат в одном конфиге, новый этап производства — одна запись в таблице.",
-		bsP2: "Шесть участков с площадками захвата, кнопки покупки с анимацией появления, ускорение ленты и ребитхи.",
+		bsP2: "Шесть участков с площадками захвата, кнопки покупки с анимацией появления, ускорение ленты, ребитхи, объявления на весь сервер и лидерборд.",
 		bsP3: "Ачивки с наградами и бонусом за коллекцию, обучение для новых игроков, магазин с геймпассами и продуктами.",
-		bsP4: "Сохранения в DataStore с session lock, автосейвом и BindToClose, который дожидается записи.",
+		bsP4: "Каждый remote проверяется по объявленной схеме аргументов с rate limit на каждое событие; сохранения с session lock, автосейвом и BindToClose.",
 		skillsTitle: "Навыки",
 		sk1Title: "Luau и архитектура",
 		sk1Text: "Модули shared / server / client, типизированные API, структура под Rojo, Git.",
