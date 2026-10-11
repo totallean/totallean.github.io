@@ -6,8 +6,8 @@ const CONFIG = {
 	// Paste a game link between the quotes to show its "Play on Roblox" button; empty = hidden.
 	play: {
 		spectrum: "https://www.roblox.com/games/90164767787037/Spectrum-Forge",
-		webswing: "",
-		horror: "",
+		webswing: "https://www.roblox.com/games/131147291067537/Web-Swing",
+		horror: "https://www.roblox.com/games/113911684756464/The-Stalker",
 	},
 	contacts: [
 		// Discord has no public profile links by username, so clicking copies it instead.
